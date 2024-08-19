@@ -24,7 +24,7 @@ export default function Profile() {
         </div>
       </div>
       <div className="background">
-        <img src="../../../public/images.jpg" alt="" />
+        <img src="/images.jpg" alt="" />
       </div>
       <div className="info">
         <div className="avatarimg">
