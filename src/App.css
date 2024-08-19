@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+#root {
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+}
+.addPost {
+  margin: 20px;
+}
+.posts {
+  border: 1px solid white;
+}
+.header {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  align-items: center;
+}
+.posts img {
+  border-radius: 20px;
+}
+.content {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
