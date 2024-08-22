@@ -1,10 +1,12 @@
 import React from "react";
 import AvatarDemo from "./avatar.jsx";
-export default function Nav() {
+export default function Nav({ user }) {
+  console.log("userNav", user);
+
   return (
     <nav>
-      <AvatarDemo />
-      ashh
+      <AvatarDemo image={user.image} />
+      {user.username}
       <ul>
         <li>Home</li>
         <li>Settings</li>

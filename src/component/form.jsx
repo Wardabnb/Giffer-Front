@@ -5,7 +5,13 @@ import { Smile } from "lucide-react";
 import { useDispatch } from "react-redux";
 import { addPost } from "../app/slices/postSlice";
 
-const FormDemo = ({ setShowGif, showGif, selectedGif, setSelectedGif }) => {
+const FormDemo = ({
+  setShowGif,
+  showGif,
+  selectedGif,
+  setSelectedGif,
+  user,
+}) => {
   const dispatch = useDispatch();
   function handelClick() {
     dispatch(
@@ -29,7 +35,7 @@ const FormDemo = ({ setShowGif, showGif, selectedGif, setSelectedGif }) => {
             justifyContent: "space-between",
           }}
         ></div>
-        <AvatarDemo />
+        <AvatarDemo image={user.image} />
         <Form.Control asChild>
           <textarea className="Textarea" required />
         </Form.Control>

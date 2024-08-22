@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import GifPicker from "gif-picker-react";
 import FormDemo from "./form";
 import { useClickAway } from "@uidotdev/usehooks";
-export default function CreatePost({ setPosts }) {
+export default function CreatePost({ setPosts, user }) {
   const [showGif, setShowGif] = useState(false);
   const [selectedGif, setSelectedGif] = useState("");
   const ref = useClickAway(() => {
@@ -16,6 +16,7 @@ export default function CreatePost({ setPosts }) {
         showGif={showGif}
         selectedGif={selectedGif}
         setSelectedGif={setSelectedGif}
+        user={user}
       />
       <div ref={ref}>
         {showGif && (
